@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.header-index{
+    height: 650px;
+    background: ;
+}
+
+.header-top{
+    height: 300px;
+}
+
+.header-nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    width: 80px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: antiquewhite;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;   
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.contenido{
+    font-size: 28px;
+    text-align: center;
+    position: absolute;
+    top: 32%;
+    left: 26%;
+    width: 600px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 50px;
+    height: 270px;
+}
+
+.contenido p{
+    font-size: 20px;
+    border: 2px solid rgb(214, 214, 214);
+    padding: 14px 70px;
+    border-radius: 50px;
+}
+
+.video-fondo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* main */
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(65,65,65,0.9780287114845938) 80%, rgba(255,255,255,1) 100%);
+    color: antiquewhite;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h5{
+ text-decoration: underline;
+}
+
+.artist-name{
+    text-decoration: underline;
+}
+
+.boton-acordeon{
+    background-color: rgb(134, 0, 0);
+    color: white;
+    font-size: 20px;
+}
+
+.accordion-header :focus{
+    background-color: rgb(148, 1, 1);
+}   
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(34, 34, 34);
+    color: aliceblue;
+}
+
+/* media query - mobile */
+@media (max-width:576px){
+
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    main{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contenido{
+        font-size: 13px;
+        position: absolute;
+        top: 32%;
+        left: 7%;
+        width: 30%;
+        height: 10%px;
+    }
+    
+    .contenido p{
+        font-size: 13px;
+        width: 360px;
+        right: 3px;
+    }
+
+    img{
+        max-width: 200px;
+    }
+
+    .contenedor-video{
+        flex-direction: column;
+    }
+
+
+
+}   
